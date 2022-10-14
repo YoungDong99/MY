@@ -1,0 +1,256 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:spinnerMode="dropdown">
+
+<!--    서적 검색-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_margin ="10dp"
+            android:text="뒤로"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:text="서적 검색"
+            android:textSize="30sp"
+            android:layout_margin="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <!--    입력-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저자"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="유발 하라리"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="입력"
+            android:layout_margin="10dp"
+            android:background="@drawable/col"
+            />
+
+    </LinearLayout>
+
+    <!--    검색 목록-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sapiens"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:text="사피엔스(유발 하라리)_[출판사]"
+                    android:fontSize="100dp"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="[시리얼번호]"
+                    android:gravity="center"
+                    android:layout_margin ="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/homodeus"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:text="호모데우스(유발 하라리)_[출판사]"
+                    android:fontSize="100dp"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="[시리얼번호]"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/century"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:text="21세기를 위한 21가지 조언(유발 하라리)_[출판사]"
+                    android:fontSize="100dp"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="[시리얼번호]"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/limit"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:text="유발 하라리의 전쟁 문화사 극한의 경험(유발 하라리)_[출판사]"
+                    android:fontSize="100dp"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="[시리얼번호]"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/prediction"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:text="초예측 부의 미래(유발 하라리 외 4명)_[출판사]"
+                    android:fontSize="100dp"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="[시리얼번호]"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/operation"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="대담한 작전(유발 하라리)_[출판사]"
+                    android:fontSize="100dp"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="[시리얼번호]"
+                    android:gravity="center"
+                    android:layout_margin ="5dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+</LinearLayout>
